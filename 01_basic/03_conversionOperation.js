@@ -12,9 +12,14 @@ let score4=true;
 
 console.log(typeof score4);
 let score5=Number(score4)
-console.log(score5);*/
+console.log(score5);
 
 let loggediN=""
 console.log(loggediN);
 let boolean=Boolean(loggediN)
 console.log(boolean);
+
+let num=87;
+//let nums=num.toStirng();
+console.log(typeof num);
+
