@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai our code</title>
+    <style>
+        .body{
+            background-color: black;
+            color: wheat;
+        }
+    </style>
+</head>
+<body class="body">
+    
+</body>
+<script>
+const div = document.createElement('div');
+console.log(div);
+div.className = "main";
+div.id = "dId";
+ div.setAttribute("title", "generated title");
+div.style.padding = "10px";
+div.style.background = "red";
+// div.innerText = "zunaid alam";
+
+const text = document.createTextNode("chai or code"); // Corrected the assignment syntax
+
+div.appendChild(text);
+document.body.appendChild(div)
+</script>
+</html>

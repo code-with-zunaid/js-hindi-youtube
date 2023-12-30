@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai our code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    function changText(){
+        console.log(document.querySelector('h1').textContent);
+    }
+    function settext(){
+        console.log('chai and code learn');
+    }
+    const changme=setTimeout(changText,3000)
+    document.getElementById('stop').addEventListener('click',function(){
+        clearTimeout(changme)
+        console.log('stopped');
+    })
+</script>
+</html>
