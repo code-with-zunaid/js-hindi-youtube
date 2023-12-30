@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: black;
+            color: wheat;
+        }
+    </style>
+</head>
+<body class="body">
+    <ul class="parent">
+        <li class="child">java script</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(language){
+        const li=document.createElement('li')
+        //console.log(li);
+        li.innerHTML=`${language}`
+        document.querySelector('.parent')
+        .appendChild(li)
+
+    }
+    addLanguage('python')
+
+    function optaddLanguage(language) {
+    // Create a new list item element
+    const li = document.createElement('li');
+    
+    // Create a text node with the language
+    const textAdd = document.createTextNode(language);
+    
+    // Append the text node to the list item
+    li.appendChild(textAdd);
+
+    // Select the parent element where you want to append the new list item
+    const parent = document.querySelector('.parent');
+    
+    // Append the new list item to the parent element
+    parent.appendChild(li);
+    }
+
+    // Example: Adding "HTML" as a language
+    optaddLanguage("HTML");
+
+    //EDIT
+    const seclist=document.querySelector("li:nth-child(2)")
+    //console.log(seclist);
+    //seclist.innerHTML="zuanid"
+    const newlist=document.createElement('li')
+    newlist.textContent="CSS"
+    seclist.replaceWith(newlist)
+
+    //EDIT
+    const firstList=document.querySelector("li:first-child")
+    firstList.outerHTML="<li>react js</li>"
+
+    //REMOVE
+    const lastList=document.querySelector("li:last-child")
+    lastList.remove()
+
+</script>
+</html>
